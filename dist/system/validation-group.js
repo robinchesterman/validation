@@ -105,7 +105,8 @@ System.register(['aurelia-metadata', './validation-group-builder', './validation
 
           var _loop = function (i) {
             var validatorProperty = _this3.validationProperties[i];
-            promise = promise.then(function () {
+            promise = promise.then(function (previousOutcome) {
+              if (!previousOutcome && _this3.config.getRunSynchronously()) return;
               return validatorProperty.validateCurrentValue(forceDirty, forceExecution);
             });
           };

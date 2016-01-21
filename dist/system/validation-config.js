@@ -77,6 +77,14 @@ System.register(['./validation-locale', './strategies/twbootstrap-view-strategy'
           return this.setValue('debounceTimeout', value);
         };
 
+        ValidationConfig.prototype.runSynchronously = function runSynchronously() {
+          return this.setValue('synchronous', true);
+        };
+
+        ValidationConfig.prototype.getRunSynchronously = function getRunSynchronously() {
+          return this.getValue('synchronous');
+        };
+
         ValidationConfig.prototype.getDependencies = function getDependencies() {
           return this.getValue('dependencies');
         };

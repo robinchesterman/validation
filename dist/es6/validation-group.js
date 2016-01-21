@@ -99,7 +99,8 @@ export class ValidationGroup {
     /*eslint-disable */
     for (let i = this.validationProperties.length - 1; i >= 0; i--) {
       let validatorProperty = this.validationProperties[i];
-      promise = promise.then(() => {
+      promise = promise.then((previousOutcome) => {
+        if(!previousOutcome && this.config.getRunSynchronously()) return;
         return validatorProperty.validateCurrentValue(forceDirty, forceExecution);
       });
     }

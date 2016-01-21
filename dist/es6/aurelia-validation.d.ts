@@ -53,6 +53,8 @@ declare module 'aurelia-validation' {
     onLocaleChanged(callback: any): any;
     getDebounceTimeout(): any;
     useDebounceTimeout(value: any): any;
+    runSynchronously(): any;
+    getRunSynchronously(): any;
     getDependencies(): any;
     computedFrom(dependencies: any): any;
     useLocale(localeIdentifier: any): any;

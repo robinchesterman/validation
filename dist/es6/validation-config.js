@@ -54,6 +54,12 @@ export class ValidationConfig {
   useDebounceTimeout(value) {
     return this.setValue('debounceTimeout', value);
   }
+  runSynchronously() {
+    return this.setValue('synchronous', true);
+  }
+  getRunSynchronously() {
+    return this.getValue('synchronous');
+  }
   getDependencies() {
     return this.getValue('dependencies');
   }
