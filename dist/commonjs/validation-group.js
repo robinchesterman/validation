@@ -107,7 +107,7 @@ var ValidationGroup = (function () {
       });
     };
 
-    for (var i = this.validationProperties.length - 1; i >= 0; i--) {
+    for (var i = 0; i < this.validationProperties.length; i++) {
       _loop(i);
     }
 

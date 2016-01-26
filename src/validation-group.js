@@ -97,7 +97,7 @@ export class ValidationGroup {
     let promise = Promise.resolve(true);
     // FIXME: Need to refactor this to not use promises and loop over them
     /*eslint-disable */
-    for (let i = this.validationProperties.length - 1; i >= 0; i--) {
+    for (let i = 0; i < this.validationProperties.length; i++) {
       let validatorProperty = this.validationProperties[i];
       promise = promise.then((previousOutcome) => {
         if(!previousOutcome && this.config.getRunSynchronously()) return;
