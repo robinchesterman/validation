@@ -68,7 +68,7 @@ var ValidationLocaleRepository = (function () {
     var _this = this;
 
     if (!basePath) {
-      basePath = 'aurelia-validation/resources/';
+      basePath = 'robinchesterman/validation/resources/';
     }
     return new Promise(function (resolve, reject) {
       if (_this.instances.has(localeIdentifier)) {

@@ -18,7 +18,7 @@ ValidationConfigDefaults._defaults = {
   debounceTimeout: 0,
   dependencies: [],
   locale: 'en-US',
-  localeResources: 'aurelia-validation/resources/',
+  localeResources: 'robinchesterman/validation/resources/',
   viewStrategy: _strategiesTwbootstrapViewStrategy.TWBootstrapViewStrategy.AppendToMessage,
   allPropertiesAreMandatory: false
 };

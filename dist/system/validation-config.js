@@ -22,7 +22,7 @@ System.register(['./validation-locale', './strategies/twbootstrap-view-strategy'
         debounceTimeout: 0,
         dependencies: [],
         locale: 'en-US',
-        localeResources: 'aurelia-validation/resources/',
+        localeResources: 'robinchesterman/validation/resources/',
         viewStrategy: TWBootstrapViewStrategy.AppendToMessage,
         allPropertiesAreMandatory: false
       };
